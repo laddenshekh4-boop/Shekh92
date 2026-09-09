@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f19">
+  <title>SastaKhojo — Smart Deals, Better Prices</title>
+  <meta name="description" content="Find quality second-hand laptops and phones at smart prices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#">Sasta<span>Khojo</span></a>
+  <div class="search">
+    <span>⌕</span><input id="searchInput" type="search" placeholder="Search laptops, phones, brands...">
+  </div>
+  <nav>
+    <a href="#deals">Deals</a><a href="#categories">Categories</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="menu" onclick="toggleMenu()">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">✦ SMART SHOPPING • BETTER SAVINGS</div>
+    <h1>Good Devices.<br><em>Better Prices.</em></h1>
+    <p>Quality-checked second-hand laptops and phones, carefully listed so you can find a great deal without wasting time.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#deals">Browse Deals →</a>
+      <a class="btn ghost" href="#contact">Sell Your Device</a>
+    </div>
+    <div class="trust"><span>✓ Quality checked</span><span>✓ Budget friendly</span><span>✓ Easy enquiry</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="glow"></div>
+    <div class="device-card back"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=85" alt="Smartphone"></div>
+    <div class="device-card front"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85" alt="Laptop"></div>
+    <div class="price-tag">Deals from <strong>₹4,999</strong></div>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <div class="section-head"><div><small>SHOP BY CATEGORY</small><h2>Find your next device</h2></div><a href="#deals">View all →</a></div>
+  <div class="categories">
+    <button class="category active" onclick="filterCategory('all')"><div class="cat-icon">✦</div><div><b>All Deals</b><span>Everything in one place</span></div></button>
+    <button class="category" onclick="filterCategory('laptop')"><div class="cat-icon">▣</div><div><b>Laptops</b><span>Study, work & everyday</span></div></button>
+    <button class="category" onclick="filterCategory('phone')"><div class="cat-icon">▯</div><div><b>Phones</b><span>Popular smartphones</span></div></button>
+  </div>
+</section>
+
+<section class="section deals" id="deals">
+  <div class="section-head"><div><small>🔥 HANDPICKED FOR YOU</small><h2>Best Deals</h2></div><span class="deal-note">Updated regularly</span></div>
+  <div class="products" id="products"></div>
+  <div id="empty" class="empty" hidden>No products found. Try another search.</div>
+</section>
+
+<section class="why">
+  <div><small>WHY SASTAKHOJO</small><h2>Simple shopping.<br><em>Smarter spending.</em></h2></div>
+  <div class="why-grid">
+    <article><span>01</span><h3>Quality first</h3><p>Each listing can show condition, photos and important details before you enquire.</p></article>
+    <article><span>02</span><h3>Price focused</h3><p>Compare deals quickly and find devices that fit your budget.</p></article>
+    <article><span>03</span><h3>Easy enquiry</h3><p>One tap to ask about a product through WhatsApp.</p></article>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div><small>HAVE A DEVICE TO SELL?</small><h2>Turn your unused device<br>into cash.</h2><p>Send the details and photos. We'll get back to you.</p></div>
+  <a class="btn light" href="https://wa.me/919934307099?text=Hi%20SastaKhojo%2C%20I%20want%20to%20sell%20my%20device." target="_blank">Sell on WhatsApp →</a>
+</section>
+</main>
+
+<footer><a class="logo" href="#">Sasta<span>Khojo</span></a><p>Smart deals. Better prices.</p><p>© 2026 SastaKhojo</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
